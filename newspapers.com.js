@@ -31,7 +31,7 @@ function doWeb(doc, url) {
 	/*
 	<meta property="og:title" content="Oct 11 1939 Detroit Free Press bork - on Newspapers.com">
 	*/
-	newItem.title = metaArr["og:title"].replace(/(.+?) - on Newspapers.com/, "$1");
+	newItem.title = metaArr["og:title"].replace(/(.+?) -( on)? Newspapers.com/, "$1");
 	newItem.url = metaArr["og:url"];
 	
 	/*
